@@ -9,12 +9,7 @@ body {
   padding: 0px 0 0px 0;
 
 
-  background-image: url("images/creve.jpg");
-  background-size: cover;
-  width: 100%;
-  background-position: fixed;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  
 }
 
 body a {
@@ -83,6 +78,7 @@ header nav a:hover {
 #all {
   padding: 70px;
   text-align: center;
+  background-color: rgba(0,0,0,0);
 }
 
 #footer {
@@ -109,7 +105,7 @@ header nav a:hover {
 #aboutMe {
   margin-top: 0px;
   background-color: rgba(0, 0, 255);
-  background-color: rgba(0, 0, 255, 0.3);
+  background-color: rgba(0, 0, 255, 0.7);
   opacity: 1;
   margin: 140px 100px 0 100px;
   height: 40%;
@@ -125,7 +121,7 @@ header nav a:hover {
 #fun {
   margin-top: 0px;
   background-color: rgba(0, 0, 255);
-  background-color: rgba(0, 0, 255, 0.3);
+  background-color: rgba(0, 0, 255, 0.7);
   opacity: 1;
   margin: 140px 100px 0 100px;
   height: 40%;
@@ -140,7 +136,7 @@ header nav a:hover {
 #publications {
   margin-top: 0px;
   background-color: rgba(0, 0, 255);
-  background-color: rgba(0, 0, 255, 0.3);
+  background-color: rgba(0, 0, 255, 0.7);
   opacity: 1;
   margin: 140px 100px 0 100px;
   height: 40%;
@@ -214,6 +210,23 @@ header nav a:hover {
      -webkit-font-smoothing: antialiased;
              font-smoothing: antialiased;
     font-kerning: normal;
+
+  background-color: rgba(0, 0, 255);
+  background-color: rgba(0, 0, 255, 0.7);
+  opacity: 1;
+  height: 40%;
+  border-radius: 20px;
+  float: center;
+  box-shadow:  10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: Roboto, sans-serif;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 70%;
+  margin-left: 14%;
+  margin-right: 10%;
 }
 
 
@@ -236,4 +249,66 @@ header nav a:hover {
   content: "";
   clear: both;
   display: table;
+}
+
+.crossfade > figure {
+  animation: imageAnimation 50s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  color: transparent;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0px;
+  left: -40px;
+  width: 100%;
+  z-index: -1;
+
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.crossfade > figure:nth-child(1) { background-image: url('images/creve.jpg'); }
+
+.crossfade > figure:nth-child(2) {
+  animation-delay: 10s;
+  background-image: url('images/muny.jpg');
+}
+
+.crossfade > figure:nth-child(3) {
+  animation-delay: 20s;
+  background-image: url('images/farmerDan.jpg');
+}
+
+.crossfade > figure:nth-child(4) {
+  animation-delay: 30s;
+  background-image: url('images/f2.jpg');
+  top: -4000px;
+}
+
+.crossfade > figure:nth-child(5) {
+  animation-delay: 40s;
+  top: 0px;
+  background-image: url('images/p2.jpg');
+}
+
+@keyframes 
+imageAnimation {  0% {
+ animation-timing-function: ease-in;
+ opacity: 0;
+}
+ 8% {
+ animation-timing-function: ease-out;
+ opacity: 1;
+}
+ 17% {
+ opacity: 1
+}
+ 25% {
+ opacity: 0
+}
+ 100% {
+ opacity: 0
+}
 }
