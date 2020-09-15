@@ -7,12 +7,30 @@ body, html {
 
 body {
   padding: 0px 0 0px 0;
+
+
+  background-image: url("images/creve.jpg");
+  background-size: cover;
+  width: 100%;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body a {
+  text-decoration: none;
+  color: pink;
+}
+
+body a:hover {
+  text-decoration: underline;
+  color: pink;
 }
 
 header {
   background: rgba(0, 0, 128, 0.9);
   border-bottom: 3px solid #000080;
-  box-shadow: 0px 0px 6px 0px rgba(0,0,128,1);
+  box-shadow: 0px 0px 12px 0px rgba(0,0,128,1);
   box-sizing: border-box;
   color: #fff;
   height: 60px;
@@ -25,17 +43,24 @@ header {
 }
 
 header a {
-  color: #fff;
+  color: #B3E5FC;
   text-decoration: none;
 }
 
 header a:hover {
-  text-decoration: underline;
+  color: #FFF;
+  border-bottom: 3px solid #FF0000;
+
 }
 
 #pageTitle {
   font-size: 26px;
   text-decoration: none;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 200;
+  color: #FFF;
+  border-bottom: none;
+  text-align: left;
 }
 
 header nav {
@@ -47,7 +72,12 @@ header nav {
 
 header nav a {
   display: inline-block;
+  text-decoration: none;
   margin: 0 0 0 15px;
+}
+
+header nav a:hover {
+  text-decoration: none;
 }
 
 #all {
@@ -68,24 +98,142 @@ header nav a {
 }
 
 #masthead {
-  height: 50vh;
-  background-image: url("images/seals.jpg");
-  background-size: cover;
-  position: relative;
-  background-position: 0 center;
+  height: 100vh;
+
+  
+  width: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+#aboutMe {
+  margin-top: 0px;
+  background-color: rgba(0, 0, 255);
+  background-color: rgba(0, 0, 255, 0.3);
+  opacity: 1;
+  margin: 140px 100px 0 100px;
+  height: 40%;
+  border-radius: 20px;
+  float: center;
+  box-shadow:  10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: Roboto, sans-serif;
+  padding-bottom: 15px;
+}
+
+
+#fun {
+  margin-top: 0px;
+  background-color: rgba(0, 0, 255);
+  background-color: rgba(0, 0, 255, 0.3);
+  opacity: 1;
+  margin: 140px 100px 0 100px;
+  height: 40%;
+  border-radius: 20px;
+  float: center;
+  box-shadow:  10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: Roboto, sans-serif;
+  padding-bottom: 15px;
+}
+
+#publications {
+  margin-top: 0px;
+  background-color: rgba(0, 0, 255);
+  background-color: rgba(0, 0, 255, 0.3);
+  opacity: 1;
+  margin: 140px 100px 0 100px;
+  height: 40%;
+  border-radius: 20px;
+  float: center;
+  box-shadow:  10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: Roboto, sans-serif;
+  padding-bottom: 15px;
+}
+
+#socialLinks {
+  display: block;
+  position: fixed;
+  margin: auto;
+  float: center;
+  left: 0%;
+}
+
+#icon {
+  padding-bottom: 5px;
+  
+}
+
+#icon:hover{
+  padding-bottom: 5px;
+  border-bottom: 6px solid #FF0000;
+}
+
+#sectionTitle {
+  font-size: 40px;
+  padding-top: 15px;
+}
+
+#sectionP {
+  font-size: 22px;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .fullImage {
+
   border-radius: 20px;
 }
 
-.profile {
-  position: absolute;
-  width: 120px;
-  height: 120px;
+#hero {
+  
+  bottom: 60%;
   left: 50%;
-  bottom: -60px;
-  transform: translate(-50%, 0);
+  transform: translate(0%, 30%);
+  display: inline-block;
+}
+
+.profile {
+  box-shadow:  10px 10px 10px 10px rgba(0, 0, 0, 0.75);
+  
+  width: 25%; 
   border-radius: 50%;
   border: 4px solid #fff;
+
+}
+
+.quote {
+   font-family: 'EB Garamond';
+    font-size: 40px;
+    line-height: 1.4rem;
+    height: 100%;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: auto;
+     -webkit-font-smoothing: antialiased;
+             font-smoothing: antialiased;
+    font-kerning: normal;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  margin-left: 15%;
+}
+
+.column1 {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  margin-left: 10%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
