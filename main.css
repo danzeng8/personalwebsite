@@ -202,8 +202,8 @@ header nav a:hover {
 
 .quote {
    font-family: 'EB Garamond';
-    font-size: 40px;
-    line-height: 1.4rem;
+    font-size: 28px;
+    line-height: 2rem;
     height: 100%;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: auto;
@@ -214,7 +214,7 @@ header nav a:hover {
   background-color: rgba(0, 0, 255);
   background-color: rgba(0, 0, 255, 0.7);
   opacity: 1;
-  height: 40%;
+  height: 50%;
   border-radius: 20px;
   float: center;
   box-shadow:  10px 10px 10px 10px rgba(0, 0, 0, 0.5);
