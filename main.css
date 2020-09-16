@@ -7,9 +7,12 @@ body, html {
 
 body {
   padding: 0px 0 0px 0;
-
-
-  
+background-image: url("images/creve.jpg");
+  background-size: cover;
+  width: 100%;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body a {
