@@ -284,7 +284,6 @@ header nav a:hover {
 .crossfade > figure:nth-child(4) {
   animation-delay: 30s;
   background-image: url('images/f2.jpg');
-  top: -4000px;
 }
 
 .crossfade > figure:nth-child(5) {
@@ -294,7 +293,8 @@ header nav a:hover {
 }
 
 @keyframes 
-imageAnimation {  0% {
+imageAnimation 
+{  0% {
  animation-timing-function: ease-in;
  opacity: 0;
 }
