@@ -64,7 +64,7 @@
 		<h3><a href="#">Dan Zeng</a>, <a href="https://www.danforthcenter.org/our-work/principal-investigators/mao-li/">Mao Li/a>, <a href="https://scholar.google.com/citations?user=u-Q-Bh0AAAAJ&hl=en">Ni Jiang</a>, Yiwen Ju, Hannah Schreiber, <a href="https://cs.slu.edu/~chambers/">Erin Chambers</a>, <a href="https://cs.slu.edu/people/letscher">David Letscher</a>, <a href="https://www.cse.wustl.edu/~taoju/">Tao Ju</a>, <a href="https://www.danforthcenter.org/our-work/principal-investigators/christopher-topp/?gclid=Cj0KCQjwnJaKBhDgARIsAHmvz6c_Qh8KUB67EK99ldcAxJMHXJkE2om_bj416jRyXqmDO8ZXjz2yv18aAiTSEALw_wcB">Christopher N. Topp</a></h3>
 		<p id='sectionP'>3D imaging, such as X-ray CT and MRI, has been widely deployed to study plant root structures. Many computational tools exist to extract coarse-grained features from 3D root images, such as total volume, root number and total root length. However, methods that can accurately and efficiently compute fine-grained root traits, such as root number and geometry at each hierarchy level, are still lacking. These traits would allow biologists to gain deeper insights into the root system architecture (RSA). We present TopoRoot, a high-throughput computational method that computes fine-grained architectural traits from 3D X-ray CT images of field-excavated maize root crowns. These traits include the number, length, thickness, angle, tortuosity, and number of children for the roots at each level of the hierarchy. TopoRoot combines state-of-the-art algorithms in computer graphics, such as topological simplification and geometric skeletonization, with customized heuristics for robustly obtaining the branching structure and hierarchical information. TopoRoot is validated on both real and simulated root images, and in both cases it was shown to improve the accuracy of traits over existing methods. We also demonstrate TopoRoot in differentiating a maize root mutant from its wild type segregant using fine-grained traits. TopoRoot runs within a few minutes on a desktop workstation for volumes at the resolution range of 400^3, without need for human intervention. Together, TopoRoot's improved accuracy and automation make it suitable for batch processing on a large number of root images. Our method is thus useful for phenomic studies aimed at finding the genetic basis behind root system architecture and the subsequent development of more productive crops.</p>
 		<img src="images/pipeline.png" style="width:100%">
-		<p id='sectionP'>The pipeline of TopoRoot for computing fine-grained traits from a 3D X-ray image. Beginning from a 3D grayscale image (A), TopoRoot first simplifies the topological complexity of the iso-surface (B), then it creates a geometric skeleton capturing the branching structure (C), from which a hierarchy is obtained (D) and the traits are subsequently computed.</p>
+		<p id='sectionC'>The pipeline of TopoRoot for computing fine-grained traits from a 3D X-ray image. Beginning from a 3D grayscale image (A), TopoRoot first simplifies the topological complexity of the iso-surface (B), then it creates a geometric skeleton capturing the branching structure (C), from which a hierarchy is obtained (D) and the traits are subsequently computed.</p>
 		<br>
 
 		<h2 id='pubTitle'>To cut or to fill: a global optimization approach to topological simplification</h2>
@@ -73,7 +73,7 @@
 		<h3>ACM Transactions on Graphics (Proc. ACM Siggraph Asia 2020), 39(6): No. 201</h3>
 		<p id='sectionP'>We present a novel algorithm for simplifying the topology of a 3D shape, which is characterized by the number of connected components, handles, and cavities. Existing methods either limit their modifications to be only cutting or only filling, or take a heuristic approach to decide where to cut or fill. We consider the problem of finding a globally optimal set of cuts and fills that achieve the simplest topology while minimizing geometric changes. We show that the problem can be formulated as graph labelling, and we solve it by a transformation to the Node-Weighted Steiner Tree problem. When tested on examples with varying levels of topological complexity, the algorithm shows notable improvement over existing simplification methods in both topological simplicity and geometric distortions.</p>
 		<img src="images/fig1.PNG" style="width:80%">
-		<p id='sectionP'>To simplify the topology of a 3D shape (a), performing cutting alone (b) or filling alone (c) results in excessive changes, such as removing large components (box C in (b)), creating long bridges to distant islands (box A in (c)) and large patches to fill in a handle (box B in (c)). Given a set of pre-computed cuts and fills, our method optimally selects a subset of them to maximally simplify topology while minimizing the impact on the geometry (d). (β: number of connected components, handles, and cavities; д: geometric cost)</p>
+		<p id='sectionC'>To simplify the topology of a 3D shape (a), performing cutting alone (b) or filling alone (c) results in excessive changes, such as removing large components (box C in (b)), creating long bridges to distant islands (box A in (c)) and large patches to fill in a handle (box B in (c)). Given a set of pre-computed cuts and fills, our method optimally selects a subset of them to maximally simplify topology while minimizing the impact on the geometry (d). (β: number of connected components, handles, and cavities; д: geometric cost)</p>
 		<br>
 		<br>
 		<br>
@@ -85,10 +85,14 @@
 
 		<div class="row">
 		  <div class="column">
-		    <img src="images/journalCover.PNG" style="width:100%">
+		  	<a href="https://nph.onlinelibrary.wiley.com/toc/14698137/2020/226/6">
+		    	<img src="images/journalCover.PNG" style="width:100%">
+			</a>
 		  </div>
 		  <div class="column">
-		    <img src="images/sorghumSkel.PNG" style="width:87%">
+		  	<a href="https://raw.githubusercontent.com/danzeng8/personalwebsite/master/images/sorghumSkel.PNG">
+		    	<img src="images/sorghumSkel.PNG" style="width:87%">
+			</a>
 		  </div>
 		</div>
 
